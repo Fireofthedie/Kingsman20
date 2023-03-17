@@ -23,5 +23,20 @@ namespace Kingsman20.Windows
         {
             InitializeComponent();
         }
+
+        private void BtnAuth_Click(object sender, RoutedEventArgs e)
+        {
+            var userAuth = ClassHelper.EF.Context.Emploers.ToList().Where(i => i.Login == TbLogin.Text && i.Password == Pbpassword.Password). 
+                FirstOrDefault();
+            if (userAuth != null) {
+                ServiceWindow serviceWindow = new ServiceWindow();
+                serviceWindow.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Пользователь не существует!", "ErrorText", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

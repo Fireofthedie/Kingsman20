@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kingsman20.Windows"
         mc:Ignorable="d"
-        Title="SignIn" Height="450" Width="800">
+        Title="SignIn" Height="600" Width="400"
+        
+        WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Res/atelier.jpg"
+                        Opacity="0.3"
+                        Stretch="Fill"/>            
+        </Grid.Background>
+            
+        <StackPanel>
+            <TextBlock Text="Авторизация"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0 36 0 0"/>
+            
+            <TextBlock Text="Логин"
+                       FontSize="18"
+                       
+                       HorizontalAlignment="Center"
+                       Margin="0 50 0 0" FontWeight="Bold"/>
+            
+            <TextBox x:Name="TbLogin"
+                     FontSize="18"
+                     Width="250"
+
+                     Margin="0 20 0 0" Height="35"/>
+            
+            <TextBlock Text="Пароль"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 50 0 0" FontWeight="Bold"/>
+            
+            <PasswordBox x:Name="Pbpassword"
+                     FontSize="18"
+                     Width="250"
+                     Margin="0 20 0 0" Height="35"/>
+
+            <Button x:Name="BtnAuth"
+                    Content="Вход"
+                    Margin="0 100 0 0"
+                    Width="200"
+                    Height="40" Click="BtnAuth_Click" FontWeight="Bold" FontSize="16"/>
+
+
+        </StackPanel>
         
     </Grid>
 </Window>
