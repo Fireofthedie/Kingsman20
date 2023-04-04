@@ -21,3 +21,7 @@
 <p>Окно регистрации</p>
 
 ![image](https://user-images.githubusercontent.com/120939042/228219627-319e8a2f-97db-4c5a-a9de-66a9db872c73.png)
+
+<p>Окно добавления</p>
+
+![image](https://user-images.githubusercontent.com/120939042/229747380-b9276d5a-3bfa-40a3-90d9-c6f2797d8740.png)
