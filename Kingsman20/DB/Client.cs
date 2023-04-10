@@ -28,6 +28,8 @@ namespace Kingsman20.DB
         public Nullable<System.DateTime> Birthday { get; set; }
         public string GenderCode { get; set; }
         public Nullable<int> Size { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
     
         public virtual Gender Gender { get; set; }
         public virtual Size Size1 { get; set; }

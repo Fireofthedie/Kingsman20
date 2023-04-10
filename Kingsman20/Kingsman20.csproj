@@ -128,8 +128,20 @@
     <Compile Include="Pages\Materials.xaml.cs">
       <DependentUpon>Materials.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddServiceWindow.xaml.cs">
+      <DependentUpon>AddServiceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ClientWindows.xaml.cs">
+      <DependentUpon>ClientWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EditServiceWindow.xaml.cs">
+      <DependentUpon>EditServiceWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Emploers.xaml.cs">
       <DependentUpon>Emploers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EmploersWindow.xaml.cs">
+      <DependentUpon>EmploersWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Orders.xaml.cs">
       <DependentUpon>Orders.xaml</DependentUpon>
@@ -165,7 +177,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\AddServiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ClientWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EditServiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Emploers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EmploersWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -252,6 +280,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\icons8-pencil-drawing-94.png" />
+    <Resource Include="Res\icons8-add-30.png" />
+    <Resource Include="Res\Troyka.jpg" />
+    <Resource Include="Res\kost.jpg" />
     <Resource Include="Res\atelier.jpg" />
   </ItemGroup>
   <ItemGroup>

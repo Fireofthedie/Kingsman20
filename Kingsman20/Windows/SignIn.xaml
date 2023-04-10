@@ -8,50 +8,96 @@
         Title="SignIn" Height="600" Width="400"
         
         WindowStartupLocation="CenterScreen">
+
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Res/atelier.jpg"
                         Opacity="0.3"
-                        Stretch="Fill"/>            
+                        Stretch="Fill"/>
         </Grid.Background>
-            
+
         <StackPanel>
             <TextBlock Text="Авторизация"
                        FontSize="28"
                        FontWeight="Bold"
                        HorizontalAlignment="Center"
-                       Margin="0 36 0 0"/>
-            
+                       Margin="0 45 0 0" FontFamily="Glasgow Heavy"/>
+
             <TextBlock Text="Логин"
                        FontSize="18"
-                       
+                       FontFamily="Glasgow Heavy"
                        HorizontalAlignment="Center"
-                       Margin="0 50 0 0" FontWeight="Bold"/>
-            
-            <TextBox x:Name="TbLogin"
-                     FontSize="18"
-                     Width="250"
+                       Margin="0 70 0 0" FontWeight="Bold"/>
 
-                     Margin="0 20 0 0" Height="35"/>
-            
+            <TextBox x:Name="TbLogin"
+                     FontSize="18"                    
+                     Width="250"
+                     Height="35"
+                     Opacity="0.7"
+                     Margin="0 20 0 0">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FFE6FFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+
             <TextBlock Text="Пароль"
                        FontSize="18"
                        HorizontalAlignment="Center"
-                       Margin="0 50 0 0" FontWeight="Bold"/>
-            
+                       Margin="0 30 0 0" FontWeight="Bold"
+                       FontFamily="Glasgow Heavy"/>
+
             <PasswordBox x:Name="Pbpassword"
                      FontSize="18"
-                     Width="250"
-                     Margin="0 20 0 0" Height="35"/>
+                     Width="250"                     
+                     Margin="0 20 0 0" Height="35" Opacity="0.7">
+                <PasswordBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0.112"/>
+                        <GradientStop Color="#FFD5F3F3" Offset="1"/>
+                    </LinearGradientBrush>
+                </PasswordBox.Background>
+            </PasswordBox>
+
 
             <Button x:Name="BtnAuth"
                     Content="Вход"
-                    Margin="0 100 0 0"
-                    Width="200"
-                    Height="40" Click="BtnAuth_Click" FontWeight="Bold" FontSize="16"/>
-
-
+                    Margin="0 90 0 0"
+                    Width="250" 
+                    Height="40" Click="BtnAuth_Click" FontWeight="Bold" FontSize="16">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF7FAFB"/>
+                        <GradientStop Color="#FFB7E4F2" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BtnReg"
+                    Content="Регистрация"
+                    Width="152" 
+                    Margin="30"
+                    Height="29"  FontWeight="Bold" FontSize="14" Click="BtnReg_Click_1" 
+                    >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF7FAFB"/>
+                        <GradientStop Color="#FFC6F2B7" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </StackPanel>
-        
+
     </Grid>
 </Window>

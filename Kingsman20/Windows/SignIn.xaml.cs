@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Kingsman20.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для SignIn.xaml
-    /// </summary>
     public partial class SignIn : Window
     {
         public SignIn()
@@ -26,9 +23,10 @@ namespace Kingsman20.Windows
 
         private void BtnAuth_Click(object sender, RoutedEventArgs e)
         {
-            var userAuth = ClassHelper.EF.Context.Emploers.ToList().Where(i => i.Login == TbLogin.Text && i.Password == Pbpassword.Password). 
+            var userAuth = ClassHelper.EF.Context.Emploers.ToList().Where(i => i.Login == TbLogin.Text && i.Password == Pbpassword.Password).
                 FirstOrDefault();
-            if (userAuth != null) {
+            if (userAuth != null)
+            {
                 ServiceWindow serviceWindow = new ServiceWindow();
                 serviceWindow.Show();
                 this.Close();
@@ -37,6 +35,13 @@ namespace Kingsman20.Windows
             {
                 MessageBox.Show("Пользователь не существует!", "ErrorText", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void BtnReg_Click_1(object sender, RoutedEventArgs e)
+        {
+            RegistrationWindow regWindow = new RegistrationWindow();
+            regWindow.Show();
+            this.Close();
         }
     }
 }
