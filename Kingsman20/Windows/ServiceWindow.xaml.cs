@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Kingsman20.ClassHelper;
 
 namespace Kingsman20.Windows
 {
@@ -40,6 +41,8 @@ namespace Kingsman20.Windows
         }
         private void BtnCngService_Click(object sender, RoutedEventArgs e)
         {                     
+            EditServiceWindow editServiceWindow = new EditServiceWindow();
+            editServiceWindow.ShowDialog();
             var button = sender as Button;
             var service = button.DataContext as DB.Service;
             EditServiceWindow addServiceWindow = new EditServiceWindow();
@@ -50,6 +53,27 @@ namespace Kingsman20.Windows
                 return;
             }
             GetListService();
+        }
+
+        private void BtnAddCartService_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+            var service = button.DataContext as DB.Service; // получаем выбранную запись
+
+
+            CartService.ServiceCart.Add(service);
+
+            MessageBox.Show($"Услуга {service.Title} добавлена в корзину!");
+        }
+
+        private void GoToCart_Click(object sender, RoutedEventArgs e)
+        {
+            CartWindow GoToCartWindow = new CartWindow();
+            GoToCartWindow.ShowDialog();
         }
     }
 }

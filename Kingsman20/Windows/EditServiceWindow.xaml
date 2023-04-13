@@ -12,6 +12,7 @@
         <StackPanel VerticalAlignment="Center">
             <TextBlock Text="Редактирование услуги"
                        FontSize="28"
+                       FontFamily="Glasgow Heavy"
                        FontWeight="Bold"
                        HorizontalAlignment="Center"
                        Margin="0 10 0 0"/>
@@ -27,6 +28,7 @@
                     Width="200"
                     Height="40"
                     Margin="0 8 0 0"
+                    Click="BtnChooseImage_Click"
                     />
 
             <TextBlock Text="Введите наименование услуги"

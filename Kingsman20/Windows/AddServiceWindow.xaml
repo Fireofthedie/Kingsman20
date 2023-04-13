@@ -14,6 +14,7 @@
             <TextBlock Text="Добавление услуги"
                        FontSize="28"
                        FontWeight="Bold"
+                       FontFamily="Glasgow Heavy"
                        HorizontalAlignment="Center"
                        Margin="0 10 0 0"/>
 

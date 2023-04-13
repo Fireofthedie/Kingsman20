@@ -56,8 +56,6 @@
                             <TextBlock Text="{Binding Patronymic}"
                                        FontSize="18"
                                        Margin="5 3"/>
-
-
                         </StackPanel>
                     </Border>
                 </DataTemplate>

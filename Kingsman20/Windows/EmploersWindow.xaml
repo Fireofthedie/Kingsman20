@@ -17,6 +17,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock Text="Список сотрудников"
+                   FontFamily="Glasgow Heavy"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="30"

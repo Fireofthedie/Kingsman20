@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelper\CartService.cs" />
     <Compile Include="ClassHelper\EF.cs" />
     <Compile Include="DB\CategoryOfService.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -131,17 +132,20 @@
     <Compile Include="Windows\AddServiceWindow.xaml.cs">
       <DependentUpon>AddServiceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\CartWindow.xaml.cs">
+      <DependentUpon>CartWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ClientWindows.xaml.cs">
       <DependentUpon>ClientWindows.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\EditServiceWindow.xaml.cs">
       <DependentUpon>EditServiceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Emploers.xaml.cs">
-      <DependentUpon>Emploers.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\EmploersWindow.xaml.cs">
       <DependentUpon>EmploersWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Order.xaml.cs">
+      <DependentUpon>Order.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Orders.xaml.cs">
       <DependentUpon>Orders.xaml</DependentUpon>
@@ -157,9 +161,6 @@
     </Compile>
     <Compile Include="Windows\SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\Storage.xaml.cs">
-      <DependentUpon>Storage.xaml</DependentUpon>
     </Compile>
     <Page Include="Pages\Basket.xaml">
       <SubType>Designer</SubType>
@@ -181,15 +182,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\CartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ClientWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\EditServiceWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\Emploers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -209,6 +210,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\Order.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Orders.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -226,10 +231,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\SignUp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\Storage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -280,6 +281,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\out-of-stock-64.png" />
+    <Resource Include="Res\RemoveCart.png" />
+    <Resource Include="Res\CartBackground.jpg" />
+    <Resource Include="Res\background.jpg" />
+    <Resource Include="Res\shopping-cart.png" />
     <Resource Include="Res\icons8-pencil-drawing-94.png" />
     <Resource Include="Res\icons8-add-30.png" />
     <Resource Include="Res\Troyka.jpg" />
