@@ -54,7 +54,6 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ClientID" Type="int" Nullable="false" />
           <Property Name="EmploersID" Type="int" Nullable="false" />
-          <Property Name="TotalSum" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="DateTime" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="OrderService">
@@ -64,6 +63,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ServiceID" Type="int" Nullable="false" />
           <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Post">
           <Key>
@@ -443,7 +443,6 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ClientID" Type="Int32" Nullable="false" />
           <Property Name="EmploersID" Type="Int32" Nullable="false" />
-          <Property Name="TotalSum" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
           <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="Client" Relationship="Model.FK_Order_Client" FromRole="Order" ToRole="Client" />
           <NavigationProperty Name="Emploers" Relationship="Model.FK_Order_Emploers" FromRole="Order" ToRole="Emploers" />
@@ -456,6 +455,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ServiceID" Type="Int32" Nullable="false" />
           <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Order" Relationship="Model.FK_OrderService_Order" FromRole="OrderService" ToRole="Order" />
           <NavigationProperty Name="Service" Relationship="Model.FK_OrderService_Service" FromRole="OrderService" ToRole="Service" />
         </EntityType>
@@ -691,7 +691,6 @@
             <EntityTypeMapping TypeName="Model.Order">
               <MappingFragment StoreEntitySet="Order">
                 <ScalarProperty Name="DateTime" ColumnName="DateTime" />
-                <ScalarProperty Name="TotalSum" ColumnName="TotalSum" />
                 <ScalarProperty Name="EmploersID" ColumnName="EmploersID" />
                 <ScalarProperty Name="ClientID" ColumnName="ClientID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
@@ -701,6 +700,7 @@
           <EntitySetMapping Name="OrderService">
             <EntityTypeMapping TypeName="Model.OrderService">
               <MappingFragment StoreEntitySet="OrderService">
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="OrderID" ColumnName="OrderID" />
                 <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />

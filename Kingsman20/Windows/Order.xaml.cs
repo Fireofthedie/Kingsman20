@@ -47,5 +47,10 @@ namespace Kingsman20.Windows
             CartWindow BackToCartWindow = new CartWindow();
             BackToCartWindow.ShowDialog();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

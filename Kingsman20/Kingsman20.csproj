@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="ClassHelper\CartService.cs" />
     <Compile Include="ClassHelper\EF.cs" />
+    <Compile Include="ClassHelper\UserDataClass.cs" />
     <Compile Include="DB\CategoryOfService.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -281,6 +282,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\icons8-add-48.png" />
+    <Resource Include="Res\icons8-minus-48.png" />
+    <Resource Include="Res\icons8-plus-32.png" />
     <Resource Include="Res\out-of-stock-64.png" />
     <Resource Include="Res\RemoveCart.png" />
     <Resource Include="Res\CartBackground.jpg" />

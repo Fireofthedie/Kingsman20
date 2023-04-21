@@ -23,7 +23,6 @@ namespace Kingsman20.DB
         public int ID { get; set; }
         public int ClientID { get; set; }
         public int EmploersID { get; set; }
-        public decimal TotalSum { get; set; }
         public System.DateTime DateTime { get; set; }
     
         public virtual Client Client { get; set; }

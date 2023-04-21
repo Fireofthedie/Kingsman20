@@ -27,6 +27,8 @@ namespace Kingsman20.Windows
                 FirstOrDefault();
             if (userAuth != null)
             {
+                ClassHelper.UserDataClass.Emploers = userAuth;
+
                 ServiceWindow serviceWindow = new ServiceWindow();
                 serviceWindow.Show();
                 this.Close();

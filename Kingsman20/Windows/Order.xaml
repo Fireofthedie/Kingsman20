@@ -86,13 +86,17 @@
         </ListView>
 
         <Button 
+                x:Name="BtnPay"
             Content="Оплатить"
                 Grid.Row="3"
                 Width="150"
                 Height="50"
                 BorderThickness="3"
-                HorizontalAlignment="Center" FontWeight="Bold"
-                FontFamily="Glasgow Heavy" FontSize="16"
+                HorizontalAlignment="Center"
+                FontWeight="Bold"
+                FontFamily="Glasgow Heavy"
+                FontSize="16"
+            Click="Button_Click"
                 >
             <Button.Resources>
                 <Style TargetType="Border">

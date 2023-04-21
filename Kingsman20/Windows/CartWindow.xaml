@@ -66,13 +66,43 @@
                                        Margin="5 3"
                                        TextWrapping="Wrap" FontFamily="Arial Rounded MT Bold"/>
 
-                            <WrapPanel HorizontalAlignment="Right">
+                            <WrapPanel Height="57" >
 
-                                <Button x:Name="BtnRomoveToCart"
+                                <Button x:Name="BtnMinus"
+                                        Width="25"
+                                        Height="25"
+                                        Margin="10 20 0 10"
+                                        BorderThickness="0"
+                                        Background="{x:Null}">
+                                    <Image Source="/Res/icons8-minus-48.png" Stretch="Fill" />
+                                </Button>
+
+                                <TextBlock x:Name="CountOfService"
+                                           Width="70"
+                                           Height="25" 
+                                           Margin="5 0 5 10"
+                                           FontWeight="Bold"
+                                           TextAlignment="Center"
+                                           FontSize="18"
+                                           Text="{Binding Quantity}" 
+                                           VerticalAlignment="Bottom"
+                                           >
+                                    
+                                </TextBlock>
+
+                                <Button x:Name="BtnPlus"
+                                        Width="25"
+                                        Height="25"
+                                        Margin="0 20 0 10"
+                                        BorderThickness="0"
+                                        Background="{x:Null}">
+                                    <Image Source="/Res/icons8-add-48.png"/>
+                                </Button>
+                                <Button x:Name="BtnRemoveToCart"
                                     Width="40"
                                     Height="40"
-                                    HorizontalAlignment="Left"
-                                    Margin="30 5 0 0"
+                                    HorizontalAlignment="Right"
+                                    Margin="10 0 0 0"
                                     Background="{x:Null}"
                                     BorderThickness="0"
                                     Click="BtnRemoveToCart_Click">
@@ -87,13 +117,17 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button 
+                x:Name="BtnGoToOrder"
                 Content="Оформить заказ"
                 Grid.Row="3"
                 Width="150"
                 Height="50"
                 BorderThickness="3"
-                HorizontalAlignment="Center" FontWeight="Bold"
-                FontFamily="Glasgow Heavy" FontSize="16" Click="Button_Click"
+                HorizontalAlignment="Center" 
+                FontWeight="Bold"
+                FontFamily="Glasgow Heavy"
+                FontSize="16"
+                Click="BtnGoToOrder_Click"
                 >
             <Button.Resources>
                 <Style TargetType="Border">
