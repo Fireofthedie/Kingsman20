@@ -16,7 +16,7 @@
 
 <p>Окно сервиса</p>
 
-![image](https://user-images.githubusercontent.com/120939042/228219549-fc8a3835-b9e8-4aa3-9337-f79ca8f37cbe.png)
+![image](https://user-images.githubusercontent.com/120939042/234240872-e60bdfa0-8240-403b-b29e-4ebcb5ea7c6b.png)
 
 <p>Окно регистрации</p>
 
