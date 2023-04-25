@@ -13,10 +13,9 @@
 
 ![image](https://user-images.githubusercontent.com/120939042/227508329-67086db9-dfae-4440-9551-37fe4bca1899.png)
 
-
 <p>Окно сервиса</p>
 
-![image](https://user-images.githubusercontent.com/120939042/234240872-e60bdfa0-8240-403b-b29e-4ebcb5ea7c6b.png)
+![image](https://user-images.githubusercontent.com/120939042/234260719-e8a640e7-abc9-42aa-bee2-d6c874ce628c.png)
 
 <p>Окно регистрации</p>
 
@@ -27,4 +26,11 @@
 ![image](https://user-images.githubusercontent.com/120939042/229747380-b9276d5a-3bfa-40a3-90d9-c6f2797d8740.png)
 
 <p>Окно изменения Услуги </p>
+
+![image](https://user-images.githubusercontent.com/120939042/234260288-cba34f24-9c30-44cc-847f-84a85ea1b2c4.png)
+
+<p>Корзина </p>
+
+![image](https://user-images.githubusercontent.com/120939042/234260586-7e3897f1-b067-49b0-a971-10985171a038.png)
+
 
