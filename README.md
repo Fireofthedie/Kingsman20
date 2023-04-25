@@ -25,3 +25,6 @@
 <p>Окно добавления</p>
 
 ![image](https://user-images.githubusercontent.com/120939042/229747380-b9276d5a-3bfa-40a3-90d9-c6f2797d8740.png)
+
+<p>Окно изменения Услуги </p>
+
