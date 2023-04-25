@@ -15,18 +15,24 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/Res/fon.jpg"
+                        Opacity="0.3"
+                        Stretch="Fill"/>
+        </Grid.Background>
 
-            <TextBlock Text="Корзина"
+
+        <TextBlock Text="Корзина"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="30"
                         FontFamily="Glasgow Heavy"
                    FontWeight="Bold"/>
+        
         <ListView x:Name="LvCartService" 
                   Grid.Row="2" 
                   d:ItemsSource="{d:SampleData ItemCount=5}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}">
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" >
 
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -47,7 +53,7 @@
                                    Width="200" 
                                    Margin="8">
                                 <Image.Source>
-                                    <Binding Path ="Image">
+                                    <Binding Path ="Photo">
                                         <Binding.TargetNullValue>
                                             <ImageSource>/Res/out-of-stock-64.png</ImageSource>
                                         </Binding.TargetNullValue>
@@ -55,16 +61,17 @@
                                 </Image.Source>
                             </Image>
 
-                            <TextBlock Text="{Binding ServiceName}"
+                            <TextBlock Text="{Binding Title}"
                                        FontSize="18"
                                        Margin="5 3"/>
-                            <TextBlock Text="{Binding Price}"
+                            <TextBlock Text="{Binding Cost}"
                                        FontSize="18"
                                        Margin="5 3"/>
                             <TextBlock Text="{Binding Description}"
                                        FontSize="18"
                                        Margin="5 3"
-                                       TextWrapping="Wrap" FontFamily="Arial Rounded MT Bold"/>
+                                       TextWrapping="Wrap"
+                                       FontFamily="Arial Rounded MT Bold"/>
 
                             <WrapPanel Height="57" >
 
@@ -72,6 +79,7 @@
                                         Width="25"
                                         Height="25"
                                         Margin="10 20 0 10"
+                                        Click="BtnMinus_Click"
                                         BorderThickness="0"
                                         Background="{x:Null}">
                                     <Image Source="/Res/icons8-minus-48.png" Stretch="Fill" />
@@ -84,10 +92,9 @@
                                            FontWeight="Bold"
                                            TextAlignment="Center"
                                            FontSize="18"
-                                           Text="{Binding Quantity}" 
+                                           Text="{Binding Count}"
                                            VerticalAlignment="Bottom"
-                                           >
-                                    
+                                           >                                    
                                 </TextBlock>
 
                                 <Button x:Name="BtnPlus"
@@ -95,9 +102,11 @@
                                         Height="25"
                                         Margin="0 20 0 10"
                                         BorderThickness="0"
+                                        Click="BtnPlus_Click"
                                         Background="{x:Null}">
                                     <Image Source="/Res/icons8-add-48.png"/>
                                 </Button>
+                                
                                 <Button x:Name="BtnRemoveToCart"
                                     Width="40"
                                     Height="40"
@@ -106,12 +115,11 @@
                                     Background="{x:Null}"
                                     BorderThickness="0"
                                     Click="BtnRemoveToCart_Click">
-                                    <Image Source="/Res/RemoveCart.png"  />
+                                    <Image Source="/Res/RemoveCart.png"/>
                                 </Button>
+                                
                             </WrapPanel>
-
                         </StackPanel>
-
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>

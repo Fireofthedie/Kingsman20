@@ -16,8 +16,12 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-       
-                    
+        <Grid.Background>
+            <ImageBrush ImageSource="/Res/fon.jpg"
+                        Opacity="0.3"
+                        Stretch="Fill"/>
+        </Grid.Background>
+
         <TextBlock Text="Список услуг"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
@@ -58,7 +62,7 @@
                                    Width="200" 
                                    Margin="8">
                                 <Image.Source>
-                                    <Binding Path ="Image">
+                                    <Binding Path ="Photo">
                                         <Binding.TargetNullValue>
                                             <ImageSource>/Res/out-of-stock-64.png</ImageSource>
                                         </Binding.TargetNullValue>
@@ -66,10 +70,10 @@
                                 </Image.Source>
                             </Image>
 
-                            <TextBlock Text="{Binding ServiceName}"
+                            <TextBlock Text="{Binding Title}"
                                        FontSize="18"
                                        Margin="5 3"/>
-                            <TextBlock Text="{Binding Price}"
+                            <TextBlock Text="{Binding Cost}"
                                        FontSize="18"
                                        Margin="5 3"/>
                             <TextBlock Text="{Binding Description}"

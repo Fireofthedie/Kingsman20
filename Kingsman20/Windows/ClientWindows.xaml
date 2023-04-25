@@ -15,6 +15,13 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
+        <Grid.Background>
+            <ImageBrush ImageSource="/Res/fon.jpg"
+                        Opacity="0.3"
+                        Stretch="Fill"/>
+        </Grid.Background>
+
+
         <TextBlock Text="Список клиентов"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"

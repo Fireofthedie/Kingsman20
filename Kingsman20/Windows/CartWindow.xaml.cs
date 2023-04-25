@@ -27,7 +27,7 @@ namespace Kingsman20.Windows
         {
             InitializeComponent();
             GetListServise();
-        }
+        }       
 
         private void GetListServise()
         {
@@ -74,16 +74,49 @@ namespace Kingsman20.Windows
                 orderService.Quantity = 1;
 
                 EF.Context.OrderService.Add(orderService);
-
+                EF.Context.SaveChanges();
             }
-
-
-
 
             EF.Context.SaveChanges();
             // переход на главную
 
             this.Close();
         }
+
+        private void BtnPlus_Click(object sender, RoutedEventArgs e)
+        {         
+            var button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }            
+
+            var Service = button.DataContext as DB.Service;
+
+            if (Service.Count < 20)
+            {
+                Service.Count++;
+                GetListServise();
+            }
+        }
+        private void BtnMinus_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+
+            var Service = button.DataContext as DB.Service;
+
+            if (Service.Count > 1)
+            {
+                Service.Count--;
+                GetListServise();
+            }
+
+        }
+
+        
     }
 }

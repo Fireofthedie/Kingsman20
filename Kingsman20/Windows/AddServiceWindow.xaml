@@ -69,6 +69,7 @@
                        FontSize="18"
                        HorizontalAlignment="Center"
                        Margin="0 16 0 0"/>
+            
             <ComboBox x:Name="CmbTypeService"
                      FontSize="18"                    
                      Width="200"

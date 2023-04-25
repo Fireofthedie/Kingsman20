@@ -30,6 +30,9 @@ namespace Kingsman20.Windows
         {
             InitializeComponent();
             isEdit = false;
+            CmbTypeService.ItemsSource = ClassHelper.EF.Context.CategoryOfService.ToList();
+            CmbTypeService.DisplayMemberPath = "CategoryName";
+            CmbTypeService.SelectedIndex = 0;
         }
         private void BtnChooseImage_Click(object sender, RoutedEventArgs e)
         {
@@ -43,10 +46,7 @@ namespace Kingsman20.Windows
         }
         public EditServiceWindow(DB.Service service)
         {
-            CmbTypeService.ItemsSource = ClassHelper.EF.Context.CategoryOfService.ToList();
-            CmbTypeService.DisplayMemberPath = "CategoryName";
-            CmbTypeService.SelectedIndex = 0;
-            InitializeComponent();
+           
 
             isEdit = true;
 

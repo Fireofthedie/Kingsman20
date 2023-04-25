@@ -148,9 +148,6 @@
     <Compile Include="Windows\Order.xaml.cs">
       <DependentUpon>Order.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Orders.xaml.cs">
-      <DependentUpon>Orders.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\Sales.xaml.cs">
       <DependentUpon>Sales.xaml</DependentUpon>
     </Compile>
@@ -212,10 +209,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\Order.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\Orders.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -282,18 +275,17 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\dress.jpg" />
+    <Resource Include="Res\fon.jpg" />
+    <Resource Include="Res\kostum.jpg" />
     <Resource Include="Res\icons8-add-48.png" />
     <Resource Include="Res\icons8-minus-48.png" />
     <Resource Include="Res\icons8-plus-32.png" />
     <Resource Include="Res\out-of-stock-64.png" />
     <Resource Include="Res\RemoveCart.png" />
-    <Resource Include="Res\CartBackground.jpg" />
-    <Resource Include="Res\background.jpg" />
     <Resource Include="Res\shopping-cart.png" />
     <Resource Include="Res\icons8-pencil-drawing-94.png" />
     <Resource Include="Res\icons8-add-30.png" />
-    <Resource Include="Res\Troyka.jpg" />
-    <Resource Include="Res\kost.jpg" />
     <Resource Include="Res\atelier.jpg" />
   </ItemGroup>
   <ItemGroup>

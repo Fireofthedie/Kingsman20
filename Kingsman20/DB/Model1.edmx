@@ -82,8 +82,9 @@
           <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="CategoryID" Type="int" Nullable="false" />
           <Property Name="Cost" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-          <Property Name="Description" Type="nvarchar" MaxLength="500" />
-          <Property Name="Photo" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Photo" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Count" Type="int" />
         </EntityType>
         <EntityType Name="Size">
           <Key>
@@ -477,8 +478,9 @@
           <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CategoryID" Type="Int32" Nullable="false" />
           <Property Name="Cost" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
-          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-          <Property Name="Photo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Photo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Count" Type="Int32" />
           <NavigationProperty Name="CategoryOfService" Relationship="Model.FK_Service_CategoryOfService" FromRole="Service" ToRole="CategoryOfService" />
           <NavigationProperty Name="OrderService" Relationship="Model.FK_OrderService_Service" FromRole="Service" ToRole="OrderService" />
         </EntityType>
@@ -720,6 +722,7 @@
           <EntitySetMapping Name="Service">
             <EntityTypeMapping TypeName="Model.Service">
               <MappingFragment StoreEntitySet="Service">
+                <ScalarProperty Name="Count" ColumnName="Count" />
                 <ScalarProperty Name="Photo" ColumnName="Photo" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Cost" ColumnName="Cost" />
