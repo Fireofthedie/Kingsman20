@@ -3,11 +3,11 @@
 
 <p>Структура проекта</p>
 
-![image](https://user-images.githubusercontent.com/120939042/224034611-faad2f51-e904-4d0a-a3dc-71141aa4f1d5.png)
+![image](https://user-images.githubusercontent.com/120939042/234255288-16a90f9e-0782-44dd-a893-51f6f2e30f07.png)
 
 <p>Диаграмма Базы </p>
 
-![image](https://user-images.githubusercontent.com/120939042/224987133-d61fd85e-82be-4c2a-8b40-b19c870ef22a.png)
+![image](https://user-images.githubusercontent.com/120939042/234255433-004ad5ad-b7b7-4a9e-a760-b6f0962cfdfa.png)
 
 <p>Окно входа</p>
 
