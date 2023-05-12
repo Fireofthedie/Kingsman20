@@ -30,5 +30,10 @@ namespace Kingsman20.Windows
         {
             LvEmploers.ItemsSource = ClassHelper.EF.Context.Emploers.ToList();
         }
+
+        private void BtnAddEmploers_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

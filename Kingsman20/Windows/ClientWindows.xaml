@@ -42,7 +42,7 @@
                     <Border BorderBrush="Gray"
                             BorderThickness="2"
                             Width="250"
-                            Height="216"
+                            Height="240"
                             CornerRadius="8">
                         <StackPanel>
                             <TextBlock Text="{Binding FirstName}"
@@ -63,10 +63,32 @@
                             <TextBlock Text="{Binding Patronymic}"
                                        FontSize="18"
                                        Margin="5 3"/>
+                            <WrapPanel>
+                                <Button x:Name="BtnCngClient"                
+                                Width="40"
+                                Height="40"
+                                Background="{x:Null}"
+                                BorderThickness="0"
+                                HorizontalAlignment="Left"
+                                Click="BtnCngClient_Click">
+                                    <Image Source="/Res/icons8-pencil-drawing-94.png"/>
+                                </Button>
+                            </WrapPanel>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button x:Name="BtnAddClient"
+                Grid.Row="3"
+                Width="40"
+                Height="40"
+                Background="{x:Null}"
+                BorderThickness="0"
+                HorizontalAlignment="Right"
+                Margin="0 0 20 0"
+                Click="BtnAddClient_Click">
+            <Image Source="/Res/icons8-add-30.png"/>
+        </Button>
     </Grid>
 </Window>

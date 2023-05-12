@@ -130,6 +130,12 @@
     <Compile Include="Pages\Materials.xaml.cs">
       <DependentUpon>Materials.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddClientWindow.xaml.cs">
+      <DependentUpon>AddClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddEmploersWindow.xaml.cs">
+      <DependentUpon>AddEmploersWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddServiceWindow.xaml.cs">
       <DependentUpon>AddServiceWindow.xaml</DependentUpon>
     </Compile>
@@ -138,6 +144,12 @@
     </Compile>
     <Compile Include="Windows\ClientWindows.xaml.cs">
       <DependentUpon>ClientWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EditClientWindow.xaml.cs">
+      <DependentUpon>EditClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EditEmploersWindow.xaml.cs">
+      <DependentUpon>EditEmploersWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\EditServiceWindow.xaml.cs">
       <DependentUpon>EditServiceWindow.xaml</DependentUpon>
@@ -176,6 +188,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\AddClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddEmploersWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AddServiceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -185,6 +205,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\ClientWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EditClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EditEmploersWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

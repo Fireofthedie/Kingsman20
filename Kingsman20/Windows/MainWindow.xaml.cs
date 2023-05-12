@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kingsman20.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,19 +26,22 @@ namespace Kingsman20
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void GoToService_Click(object sender, RoutedEventArgs e)
         {
-
+            ServiceWindow serviceWindow = new ServiceWindow();
+            serviceWindow.ShowDialog();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void GoToClient_Click(object sender, RoutedEventArgs e)
         {
-
+            ClientWindows clientWindows = new ClientWindows();
+            clientWindows.ShowDialog();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void GoToEmploee_Click(object sender, RoutedEventArgs e)
         {
-
+            EmploersWindow emploersWindow = new EmploersWindow();
+            emploersWindow.ShowDialog();
         }
     }
 }

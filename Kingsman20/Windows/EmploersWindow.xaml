@@ -38,5 +38,17 @@
             </ListView.View>
         </ListView>
 
+        <Button x:Name="BtnAddEmploers"
+                Grid.Row="3"
+                Width="40"
+                Height="40"
+                Background="{x:Null}"
+                BorderThickness="0"
+                HorizontalAlignment="Right"
+                Margin="0 0 20 0"
+                Click="BtnAddEmploers_Click">
+            <Image Source="/Res/icons8-add-30.png"/>
+        </Button>
+
     </Grid>
 </Window>

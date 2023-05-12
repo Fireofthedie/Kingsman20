@@ -72,8 +72,6 @@ namespace Kingsman20.Windows
 
         private void BtnEditService_Click(object sender, RoutedEventArgs e)
         {
-
-
             // валидация
 
             editService.Title = TbNameService.Text;
@@ -83,7 +81,7 @@ namespace Kingsman20.Windows
 
             ClassHelper.EF.Context.SaveChanges();
 
-            MessageBox.Show("Данные успешно сохранны");
+            MessageBox.Show("Данные успешно сохранены");
 
             this.Close();
         }

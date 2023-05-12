@@ -116,7 +116,5 @@ namespace Kingsman20.Windows
             }
 
         }
-
-        
     }
 }
