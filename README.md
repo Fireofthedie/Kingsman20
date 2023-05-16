@@ -33,4 +33,15 @@
 
 ![image](https://user-images.githubusercontent.com/120939042/234260586-7e3897f1-b067-49b0-a971-10985171a038.png)
 
+<p>Main window</p>
+
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/556dc4f5-57d7-459b-b7e0-1baea068654d)
+
+<p>Окно клиетов</p>
+
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/f91de4d2-df7f-425a-8b91-c444b5c25d6e)
+
+<p>Окно работников</p>
+
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/9da0ebc9-1c86-44eb-b8e1-2b27d9088aa1)
 
