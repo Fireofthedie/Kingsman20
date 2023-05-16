@@ -1,0 +1,39 @@
+﻿<Window x:Class="Kingsman20.Windows.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kingsman20.Windows"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="768" Width="1024"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Res/fon.jpg"
+                        Opacity="0.3"
+                        Stretch="Fill"/>
+        </Grid.Background>
+
+        <ListView x:Name="LvEmploers" 
+                  Grid.Row="2" 
+                  Background="{x:Null}"
+                  d:ItemsSource="{d:SampleData ItemCount=5}"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Имя" Width="200" DisplayMemberBinding="{Binding FLP}"/>
+                    <GridViewColumn Header="Фамилия" Width="200" DisplayMemberBinding="{Binding DateTime}"/>                    
+                    <GridViewColumn Header="Фамилия" Width="200" DisplayMemberBinding="{Binding Title}"/>                    
+                    <GridViewColumn Header="Фамилия" Width="200" DisplayMemberBinding="{Binding Sum}"/>                    
+                    <GridViewColumn Header="Должность" Width="200" DisplayMemberBinding="{Binding Report.NameOfPost}"/>
+                    <GridViewColumn Header="Зарплата" Width="200" DisplayMemberBinding="{Binding Report.TotalQuantity}"/>
+                    <GridViewColumn Header="Зарплата" Width="200" DisplayMemberBinding="{Binding Report.TotalSum}"/>
+                    
+                    
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+    </Grid>
+</Window>

@@ -64,5 +64,17 @@ namespace Kingsman20.Windows
 
 
         }
+
+        private void BtnReg_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnAuth_Click(object sender, RoutedEventArgs e)
+        {
+            SignIn signWindow = new SignIn();
+            signWindow.Show();
+            this.Close();
+        }
     }
 }

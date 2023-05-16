@@ -34,9 +34,10 @@
                     <GridViewColumn Header="Должность" Width="200" DisplayMemberBinding="{Binding Post.NameOfPost}"/>
                     <GridViewColumn Header="Зарплата" Width="200" DisplayMemberBinding="{Binding Post.Salary}"/>
                     <GridViewColumn Header="Пол" Width="200" DisplayMemberBinding="{Binding Gender.GenderName}"/>
-                </GridView>
-            </ListView.View>
+                </GridView>                
+            </ListView.View>            
         </ListView>
+        
 
         <Button x:Name="BtnAddEmploers"
                 Grid.Row="3"

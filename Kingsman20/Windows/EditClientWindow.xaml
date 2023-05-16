@@ -17,7 +17,7 @@
                        HorizontalAlignment="Center"
                        Margin="0 10 0 0"/>
 
-            <TextBlock Text="Имя клиента"
+            <TextBlock Text="Имя"
                        FontSize="18"
                        HorizontalAlignment="Center"
                        Margin="0 10 0 0"/>
@@ -67,7 +67,7 @@
                      Height="30"
                      />
 
-            <TextBlock Text="Размер"
+            <TextBlock Text="Размер одежды"
                        FontSize="18"
                        HorizontalAlignment="Center"
                        Margin="0 16 0 0"/>

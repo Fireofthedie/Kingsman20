@@ -26,22 +26,33 @@ namespace Kingsman20
             InitializeComponent();
         }
 
-        private void GoToService_Click(object sender, RoutedEventArgs e)
-        {
-            ServiceWindow serviceWindow = new ServiceWindow();
-            serviceWindow.ShowDialog();
-        }
 
-        private void GoToClient_Click(object sender, RoutedEventArgs e)
-        {
-            ClientWindows clientWindows = new ClientWindows();
-            clientWindows.ShowDialog();
-        }
-
-        private void GoToEmploee_Click(object sender, RoutedEventArgs e)
+        private void BtnEmploersWindow_Click(object sender, RoutedEventArgs e)
         {
             EmploersWindow emploersWindow = new EmploersWindow();
-            emploersWindow.ShowDialog();
+            emploersWindow.Show();
+            this.Close();
+        }
+
+        private void BtnClientWindow_Click(object sender, RoutedEventArgs e)
+        {
+            ClientWindows clientWindow = new ClientWindows();
+            clientWindow.Show();
+            this.Close();
+        }
+
+        private void BtnServiceWindow_Click(object sender, RoutedEventArgs e)
+        {
+            ServiceWindow serviceWindow = new ServiceWindow();
+            serviceWindow.Show();
+            this.Close();
+        }
+
+        private void BtnReportWindow_Click(object sender, RoutedEventArgs e)
+        {
+            ReportWindow reportWindow = new ReportWindow();
+            reportWindow.Show();
+            this.Close();
         }
     }
 }

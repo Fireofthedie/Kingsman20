@@ -33,7 +33,8 @@ namespace Kingsman20.Windows
 
         private void BtnAddEmploers_Click(object sender, RoutedEventArgs e)
         {
-
+            EditEmploersWindow editEmploersWindow = new EditEmploersWindow();
+            editEmploersWindow.ShowDialog();
         }
     }
 }

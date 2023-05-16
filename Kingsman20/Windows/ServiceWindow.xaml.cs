@@ -75,5 +75,7 @@ namespace Kingsman20.Windows
             CartWindow GoToCartWindow = new CartWindow();
             GoToCartWindow.ShowDialog();
         }
+
+        
     }
 }
