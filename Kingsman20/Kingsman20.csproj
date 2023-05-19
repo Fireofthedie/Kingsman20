@@ -103,6 +103,9 @@
     <Compile Include="DB\Post.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="DB\Report.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="DB\Service.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -310,6 +313,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\icons8-go-back-40.png" />
+    <Resource Include="Res\icons8-back-arrow-64.png" />
     <Resource Include="Res\dress.jpg" />
     <Resource Include="Res\fon.jpg" />
     <Resource Include="Res\kostum.jpg" />

@@ -22,18 +22,35 @@
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Имя" Width="200" DisplayMemberBinding="{Binding FLP}"/>
-                    <GridViewColumn Header="Фамилия" Width="200" DisplayMemberBinding="{Binding DateTime}"/>                    
-                    <GridViewColumn Header="Фамилия" Width="200" DisplayMemberBinding="{Binding Title}"/>                    
-                    <GridViewColumn Header="Фамилия" Width="200" DisplayMemberBinding="{Binding Sum}"/>                    
-                    <GridViewColumn Header="Должность" Width="200" DisplayMemberBinding="{Binding Report.NameOfPost}"/>
-                    <GridViewColumn Header="Зарплата" Width="200" DisplayMemberBinding="{Binding Report.TotalQuantity}"/>
-                    <GridViewColumn Header="Зарплата" Width="200" DisplayMemberBinding="{Binding Report.TotalSum}"/>
-                    
-                    
+                    <GridViewColumn Header="ФИО" Width="150" DisplayMemberBinding="{Binding Report.LFP}"/>
+                    <GridViewColumn Header="Услуга" Width="200" DisplayMemberBinding="{Binding Report.Title}"/>
+                    <GridViewColumn Header="Цена" Width="100" DisplayMemberBinding="{Binding Report.Cost}"/>
+                    <GridViewColumn Header="Количество" Width="100" DisplayMemberBinding="{Binding Report.Quantity}"/>
+                    <GridViewColumn Header="Цена за позицию" Width="100" DisplayMemberBinding="{Binding Report.Sum}"/>
+                    <GridViewColumn Header="Дата и время" Width="100" DisplayMemberBinding="{Binding Report.DateTime}"/>
+                    <GridViewColumn Header="Общее количество" Width="100" DisplayMemberBinding="{Binding Report.TotalQuantity}"/>
+                    <GridViewColumn Header="Общая сумма" Width="150" DisplayMemberBinding="{Binding Report.TotalSum}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        
+
+        <Button x:Name="BtnBack"
+                Width="40"
+                Height="40"
+                VerticalAlignment="Bottom"
+                Background="{x:Null}"
+                BorderThickness="0"
+                HorizontalAlignment="Left"
+                Margin="20 0 0 10"
+                Click="BtnBack_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Image Source="/Res/icons8-go-back-40.png" Opacity="0.8"/>
+        </Button>
+
+
     </Grid>
 </Window>

@@ -108,7 +108,23 @@
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>       
+        </ListView>
+        <Button x:Name="BtnBack"
+                Grid.Row="3"
+                Width="40"
+                Height="40"
+                Background="{x:Null}"
+                BorderThickness="0"
+                HorizontalAlignment="Left"
+                Margin="20 0 20 0"                
+                Click="BtnBack_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Image Source="/Res/icons8-go-back-40.png" Opacity="0.8"/>
+        </Button>
         <Button x:Name="BtnAddService"
                 Grid.Row="3"
                 Width="40"
@@ -118,6 +134,11 @@
                 HorizontalAlignment="Right"
                 Margin="0 0 20 0"
                 Click="BtnAddService_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
             <Image Source="/Res/icons8-add-30.png"/>
         </Button>
     </Grid>

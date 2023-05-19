@@ -36,5 +36,12 @@ namespace Kingsman20.Windows
             EditEmploersWindow editEmploersWindow = new EditEmploersWindow();
             editEmploersWindow.ShowDialog();
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();
+            this.Close();
+        }
     }
 }
