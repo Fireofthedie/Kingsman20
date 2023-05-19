@@ -21,7 +21,7 @@
 
 ![image](https://user-images.githubusercontent.com/120939042/228219627-319e8a2f-97db-4c5a-a9de-66a9db872c73.png)
 
-<p>Окно добавления</p>
+<p>Окно добавления услуги</p>
 
 ![image](https://user-images.githubusercontent.com/120939042/229747380-b9276d5a-3bfa-40a3-90d9-c6f2797d8740.png)
 
@@ -39,9 +39,29 @@
 
 <p>Окно клиетов</p>
 
-![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/f91de4d2-df7f-425a-8b91-c444b5c25d6e)
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/5f7ff557-713b-4156-b924-53c61f33aee2)
+
+<p>Добавление клиента</p>
+
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/cdee337d-11e3-4643-8952-152a3ec973ca)
+
+<p>Редактирвание клиента</p>
+
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/e5700644-9934-43e0-b572-90efb4aed126)
 
 <p>Окно работников</p>
 
-![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/9da0ebc9-1c86-44eb-b8e1-2b27d9088aa1)
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/90bbf194-9670-4cc9-b3f0-29b4fff2ff5a)
+
+<p>Добавление работников</p>
+
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/c44925c8-8256-4193-9307-bfd6a1301de8)
+
+
+<p>Окно отчета</p>
+
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/eccd2fc2-3cb5-440c-aad4-00521b09b144)
+
+
+
 
