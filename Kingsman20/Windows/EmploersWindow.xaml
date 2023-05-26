@@ -25,9 +25,10 @@
         <ListView x:Name="LvEmploers" 
                   Grid.Row="2" 
                   d:ItemsSource="{d:SampleData ItemCount=5}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">       
-            <ListView.View>
-                <GridView>
+                  ScrollViewer.HorizontalScrollBarVisibility="Visible">            
+            <ListView.View>  
+                
+                <GridView>                    
                     <GridViewColumn Header="Имя" Width="200" DisplayMemberBinding="{Binding FirstName}"/>
                     <GridViewColumn Header="Фамилия" Width="200" DisplayMemberBinding="{Binding LastName}"/>
                     <GridViewColumn Header="Отчество" Width="200" DisplayMemberBinding="{Binding Patronymic}"/>

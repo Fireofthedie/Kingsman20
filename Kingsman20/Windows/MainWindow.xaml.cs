@@ -24,6 +24,15 @@ namespace Kingsman20
         public MainWindow()
         {
             InitializeComponent();
+            if (ClassHelper.UserDataClass.Emploers.PostID == 2)
+            {
+                BtnEmploersWindow.Visibility = Visibility.Collapsed;
+                BtnReportWindow.Visibility = Visibility.Collapsed;
+            }
+            if (ClassHelper.UserDataClass.Emploers.PostID == 3)
+            {               
+                BtnReportWindow.Visibility = Visibility.Collapsed;
+            }
         }
 
 

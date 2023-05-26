@@ -15,7 +15,6 @@
         <EntityTypeShape EntityType="Model.Service" Width="1.5" PointX="8.25" PointY="0.75" />
         <EntityTypeShape EntityType="Model.Size" Width="1.5" PointX="3.75" PointY="1" />
         <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="9" />
-        <EntityTypeShape EntityType="Model.Report" Width="1.5" PointX="2.75" PointY="9" />
         <AssociationConnector Association="Model.FK_Service_CategoryOfService" />
         <AssociationConnector Association="Model.FK_Client_Gender" />
         <AssociationConnector Association="Model.FK_Client_Size" />
@@ -25,6 +24,7 @@
         <AssociationConnector Association="Model.FK_Order_Emploers" />
         <AssociationConnector Association="Model.FK_OrderService_Order" />
         <AssociationConnector Association="Model.FK_OrderService_Service" />
+        <EntityTypeShape EntityType="Model.Report" Width="1.5" PointX="3.375" PointY="8.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -24,6 +24,15 @@ namespace Kingsman20.Windows
         {
             InitializeComponent();
             GetListService();
+            if (ClassHelper.UserDataClass.Emploers.PostID == 2)
+            {
+                BtnAddService.Visibility = Visibility.Collapsed;
+            }
+            if (ClassHelper.UserDataClass.Emploers.PostID == 1)
+            {
+                GoToCart.Visibility = Visibility.Collapsed;                
+            }
+
         }
 
         private void GetListService()

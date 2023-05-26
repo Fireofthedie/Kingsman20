@@ -27,11 +27,40 @@ namespace Kingsman20.Windows
                 FirstOrDefault();
             if (userAuth != null)
             {
-                ClassHelper.UserDataClass.Emploers = userAuth;
 
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                this.Close();
+                ClassHelper.UserDataClass.Emploers = userAuth;
+                switch (userAuth.PostID)
+                {
+                    case 1:
+                        // переход на страницу директора
+                        MainWindow mainWindow = new MainWindow();
+                        mainWindow.Show();
+                        this.Close();
+                        break;
+
+                    case 2:
+                        // переход на страницу менеджера
+                        MainWindow mainWindow3 = new MainWindow();
+                        mainWindow3.Show();
+                        this.Close();
+                        break;
+
+                    case 3:
+                        // переход на страницу партного
+                        MainWindow mainWindow2 = new MainWindow();
+                        mainWindow2.Show();
+                        this.Close();
+                        break;
+
+                    default:
+                        // переход на окно список услуг
+                        ServiceWindow serviceWindow = new ServiceWindow();
+                        serviceWindow.Show();
+                        this.Close();
+
+                        break;
+                }
+                
             }
             else
             {

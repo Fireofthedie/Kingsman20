@@ -14,12 +14,10 @@ namespace Kingsman20.DB
     
     public partial class Report
     {
-        public string LFP { get; set; }
+        public string FLP { get; set; }
         public string Title { get; set; }
-        public decimal Cost { get; set; }
         public Nullable<decimal> Sum { get; set; }
         public System.DateTime DateTime { get; set; }
-        public int Quantity { get; set; }
         public Nullable<int> TotalQuantity { get; set; }
         public Nullable<decimal> TotalSum { get; set; }
     }

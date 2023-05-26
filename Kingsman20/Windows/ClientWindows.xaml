@@ -29,6 +29,7 @@
                    FontWeight="Bold"/>
         <ListView x:Name="LvService" 
                   Grid.Row="2" 
+                  Background="{x:Null}"
                   d:ItemsSource="{d:SampleData ItemCount=5}"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemsPanel>

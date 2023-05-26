@@ -82,7 +82,7 @@
                      Height="30"
                      />
 
-            <TextBlock Text="Пол клиента"
+            <TextBlock Text="Пол"
                        FontSize="18"
                        HorizontalAlignment="Center"
                        Margin="0 16 0 0"/>

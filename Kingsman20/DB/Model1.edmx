@@ -111,16 +111,12 @@
         <EntityType Name="Report">
           <Key>
             <PropertyRef Name="Title" />
-            <PropertyRef Name="Cost" />
             <PropertyRef Name="DateTime" />
-            <PropertyRef Name="Quantity" />
           </Key>
-          <Property Name="LFP" Type="nvarchar" MaxLength="56" />
+          <Property Name="FLP" Type="nvarchar" MaxLength="56" />
           <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Cost" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="Sum" Type="decimal" Precision="21" Scale="2" />
           <Property Name="DateTime" Type="datetime" Nullable="false" />
-          <Property Name="Quantity" Type="int" Nullable="false" />
           <Property Name="TotalQuantity" Type="int" />
           <Property Name="TotalSum" Type="decimal" Precision="38" Scale="2" />
         </EntityType>
@@ -276,12 +272,10 @@
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Report" EntityType="Self.Report" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
-    [Report].[LFP] AS [LFP], 
+    [Report].[FLP] AS [FLP], 
     [Report].[Title] AS [Title], 
-    [Report].[Cost] AS [Cost], 
     [Report].[Sum] AS [Sum], 
     [Report].[DateTime] AS [DateTime], 
-    [Report].[Quantity] AS [Quantity], 
     [Report].[TotalQuantity] AS [TotalQuantity], 
     [Report].[TotalSum] AS [TotalSum]
     FROM [dbo].[Report] AS [Report]</DefiningQuery>
@@ -368,7 +362,6 @@
           <EntitySet Name="Service" EntityType="Model.Service" />
           <EntitySet Name="Size" EntityType="Model.Size" />
           <EntitySet Name="sysdiagrams" EntityType="Model.sysdiagrams" />
-          <EntitySet Name="Report" EntityType="Model.Report" />
           <AssociationSet Name="FK_Service_CategoryOfService" Association="Model.FK_Service_CategoryOfService">
             <End Role="CategoryOfService" EntitySet="CategoryOfService" />
             <End Role="Service" EntitySet="Service" />
@@ -405,6 +398,7 @@
             <End Role="Service" EntitySet="Service" />
             <End Role="OrderService" EntitySet="OrderService" />
           </AssociationSet>
+          <EntitySet Name="Report" EntityType="Model.Report" />
           </EntityContainer>
         <ComplexType Name="sp_helpdiagramdefinition_Result">
           <Property Type="Int32" Name="version" Nullable="true" />
@@ -536,22 +530,6 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityType Name="Report">
-          <Key>
-            <PropertyRef Name="Title" />
-            <PropertyRef Name="Cost" />
-            <PropertyRef Name="DateTime" />
-            <PropertyRef Name="Quantity" />
-          </Key>
-          <Property Name="LFP" Type="String" MaxLength="56" FixedLength="false" Unicode="true" />
-          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Cost" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
-          <Property Name="Sum" Type="Decimal" Precision="21" Scale="2" />
-          <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="Quantity" Type="Int32" Nullable="false" />
-          <Property Name="TotalQuantity" Type="Int32" />
-          <Property Name="TotalSum" Type="Decimal" Precision="38" Scale="2" />
-        </EntityType>
         <Association Name="FK_Service_CategoryOfService">
           <End Type="Model.CategoryOfService" Role="CategoryOfService" Multiplicity="1" />
           <End Type="Model.Service" Role="Service" Multiplicity="*" />
@@ -660,6 +638,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="Report">
+          <Key>
+            <PropertyRef Name="Title" />
+            <PropertyRef Name="DateTime" />
+          </Key>
+          <Property Name="FLP" Type="String" MaxLength="56" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sum" Type="Decimal" Precision="21" Scale="2" />
+          <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TotalQuantity" Type="Int32" />
+          <Property Name="TotalSum" Type="Decimal" Precision="38" Scale="2" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -806,12 +796,10 @@
               <MappingFragment StoreEntitySet="Report">
                 <ScalarProperty Name="TotalSum" ColumnName="TotalSum" />
                 <ScalarProperty Name="TotalQuantity" ColumnName="TotalQuantity" />
-                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="DateTime" ColumnName="DateTime" />
                 <ScalarProperty Name="Sum" ColumnName="Sum" />
-                <ScalarProperty Name="Cost" ColumnName="Cost" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="LFP" ColumnName="LFP" />
+                <ScalarProperty Name="FLP" ColumnName="FLP" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

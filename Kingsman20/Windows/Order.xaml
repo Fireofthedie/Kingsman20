@@ -98,7 +98,7 @@
                 Grid.Row="3"
                 Width="150"
                 Height="50"
-                BorderThickness="3"
+                BorderThickness="3.0"
                 HorizontalAlignment="Center"
                 FontWeight="Bold"
                 FontFamily="Glasgow Heavy"
@@ -122,12 +122,19 @@
         <Button x:Name="BtnBack"
                 Content="Назад"
                 Grid.Row="3"
+                FontFamily="Glasgow Heavy"
+                FontSize="16"
                 Width="100"
                 Height="40"
-                Background="{x:Null}"
-                BorderThickness="0"
+                BorderThickness="2.0"
                 HorizontalAlignment="Right"
                 Click="BtnBack_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF7FAFB"/>
+                    <GradientStop Color="#FFF39E9E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
         </Button>
 
     </Grid>
