@@ -65,6 +65,9 @@
 
 ![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/eccd2fc2-3cb5-440c-aad4-00521b09b144)
 
+![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/793df08f-7f0c-45f6-a037-be1ece0f2d5a)
+
+
 <p>Окно портного</p>
 
 ![image](https://github.com/Fireofthedie/Kingsman20/assets/120939042/6e709a68-cda6-42e1-84d9-5dddd1c077a3)
